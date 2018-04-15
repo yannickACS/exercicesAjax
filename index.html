@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AJAX villes</title>
+</head>
+<body>
+	<header>
+		<h1>Exercices AJAX</h1>
+	</header>
+	<section id="exercice1">
+		<h5>Exercice 1</h5>
+		<article id="errorDisplayBox"></article>
+		<article class="formDisplayBox">
+			<form action="traitement.php" method="post" id="fruitForm">
+				<p>
+					<select name="weekChoose" id="selectWeek">
+						<option value="semaine_1">Semaine 1</option>
+						<option value="semaine_2">Semaine 2</option>
+						<option value="semaine_3">Semaine 3</option>
+						<option value="semaine_4">Semaine 4</option>
+					</select>
+				</p>
+				<p><input type="submit" name="btn-submit-fruitForm"></p>
+			</form>
+		</article>
+		<article id="responseBox"> </article>
+	</section>
+	<section id="exercice2">
+		<h5>Exercice 2</h5>
+		<article id="errorDisplayBox2"></article>
+		<article class="formDisplayBox2">
+			<form action="traitement.php" method="post" id="nameForm">
+				<p>Votre Nom</p>
+				<input type="text" name="userName" id="userName" value="">
+				<p>Votre Prénom</p>
+				<input type="text" name="userFirstName" id="userFirstName" value="">
+				<p><input type="submit" name="btn-submit-userNameForm"></p>
+			</form>
+		</article>
+		<article id="responseBox2"> </article>
+	</section>
+	<section id="exercice3">
+		<h5>Exercice 3</h5>
+		<article id="errorDisplayBox3"></article>
+		<article class="formDisplayBox3">
+			<form action="traitement.php" method="post" id="townForm">
+				
+				<input type="text" name="town" id="town" value="" placeholder="Saisir une ville">
+				
+				<p><input type="submit" name="btn-submit-townForm"></p>
+			</form>
+		</article>
+		<article id="responseBox3"> </article>
+	</section>
+	<footer></footer>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
